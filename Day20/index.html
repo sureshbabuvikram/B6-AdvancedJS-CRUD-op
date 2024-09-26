@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ecommerce-CART</h1>
+    <form onsubmit="onFormSubmit()">
+        <div>
+            <label>Productcode</label>
+            <input type="text" name="productCode" id="productCode" placeholder="Enter Product-Id" />
+        </div>
+        <div>
+            <label>ProductName</label>
+            <input type="text" name="product" id="product" placeholder="Enter Product-Name" />
+        </div>
+        <div>
+            <label>ProductQuantity</label>
+            <input type="number" name="qty" id="qty" placeholder="Enter Product-Quantity" />
+        </div>
+        <div>
+            <label>ProductPrice</label>
+            <input type="number" name="perPrice" id="perPrice" placeholder="Enter Product-Quantity" />
+        </div>
+
+        <div>
+            <input type="submit" value="Submit"  />
+            <input type="reset" value="Reset" />
+        </div>
+    </form>
+
+    <table class="list" id="storeList">
+        <thead>
+            <tr>
+                <th>Productcode</th>
+                <th>ProductName</th>
+                <th>ProductQuantity</th>
+                <th>ProductPrice</th>
+            </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+    </table>
+    
+</body>
+<script src="script.js"></script>
+</html>
